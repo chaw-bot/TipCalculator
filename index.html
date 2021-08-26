@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/b7a7cffe76.js" crossorigin="anonymous"></script>
+    <link href="http://fonts.cdnfonts.com/css/space-mono" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="style.css" />
+    <title>Frontend Mentor | Tip calculator app</title>
+  </head>
+
+  <body>
+    <header>
+      <img src="images/logo.svg" alt="logo">
+    </header>
+    
+    <div class="container-fluid card">
+      <main>
+        <div>
+          <div>
+            <label for="bill">Bill</label><br>
+            <input type="text" id="bill" name="bill">
+          </div>
+  
+          <div class="tip-percent">
+            <p>Select Tip %</p>
+            <ul class="tip">
+              <li>5%</li>
+              <li>10%</li>
+              <li>15%</li>
+              <li>25%</li>
+              <li>50%</li>
+              <li><input placeholder="Custom"></li>
+            </ul>
+          </div>
+  
+          <div>
+            <label for="numOfPeople">Number of People</label><br>
+            <input type="text" id="numOfPeople" name="numOfPeople">
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="amount">
+            <label for="amount">
+              <h2>Tip Amount</h2>
+              <p>/ person</p>
+            </label>
+            <input type="text" id="amount" placeholder="0.00" readonly>
+          </div>
+
+          <div class="total">
+            <label for="total">
+              <h2>Total</h2>
+              <p>/ person</p>
+            </label>
+            <input type="text" id="total" placeholder="0.00" readonly>
+          </div>
+
+          <input type="submit" value="RESET">
+        </div>
+      </main>
+  
+      <footer>
+        <div class="attribution">
+          Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+          Coded by <a href="#">Your Name Here</a>.
+        </div>
+      </footer>
+    </div>
+   
+    <script src="tip.js"></script>
+  </body>
+</html>
