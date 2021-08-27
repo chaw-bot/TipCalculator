@@ -1,0 +1,122 @@
+* li {
+  list-style: none;
+  height: 8vh;
+}
+
+* li input {
+  height: 6vh;
+  text-align: center;
+  width: 95%;
+}
+
+* {
+  font-family: Space Mono;
+}
+
+body {
+  background-color: hsl(185, 41%, 84%);
+}
+
+header {
+  padding: 40px 0 40px 0;
+  text-align: center;
+}
+
+#card {
+  border-top-right-radius: 4%;
+  border-top-left-radius: 4%;
+}
+
+.total-card {
+  display: flex;
+  flex-direction: column;
+  background-color: hsl(183, 90%, 19%);
+  border-radius: 10px;
+  padding: 20px;
+}
+
+main {
+  padding: 10% 5% 10% 5%;
+}
+ 
+.div-bill {
+  padding-bottom: 20px;
+}
+
+.bill {
+  color: hsl(186, 14%, 43%);
+  font-weight: 700;
+}
+
+#bill {
+  background: url(images/icon-dollar.svg) no-repeat scroll 7px 7px;
+  padding: 0 10px 10px 0;
+  width: 100%;
+} 
+
+input {
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#bill, #numOfPeople, #custom {
+  background-color: hsl(189, 41%, 97%);
+  font-weight: 700;
+}
+
+.tip {
+  color: hsl(0, 0%, 100%);
+  font-weight: 700;
+  background-color: hsl(183, 100%, 15%);
+  border-radius: 5px;
+}
+
+#custom {
+  color: hsl(186, 14%, 43%);
+}
+
+.tip:hover {
+  color: hsl(186, 14%, 43%);
+  background-color: hsl(172, 67%, 45%);
+}
+
+#numOfPeople {
+  background-image: url(images/icon-person.svg) ;
+  background-repeat: no-repeat;
+  width: 100%;
+}
+
+.amount, .total {
+  display: flex;
+  justify-content: space-between;
+}
+
+#amount, #total {
+  background-color: hsl(183, 90%, 19%);
+  font-size: xx-large;
+  color: hsl(172, 67%, 45%);
+  font-weight: 700;
+}
+
+h5 {
+  color: hsl(189, 41%, 97%);
+  font-weight: 1000;
+}
+
+.reset {
+  height: 8vh;
+  background-color: hsl(172, 67%, 45%);
+  font-weight: 1000;
+  font-size: x-large;
+  color: hsl(183, 90%, 19%);
+}
+
+.reset:hover {
+  background-color: hsl(172, 70%, 68%);
+}
+
+.total-card p {
+  color: hsl(172, 67%, 45%);
+  font-weight: 500;
+}
