@@ -3,18 +3,22 @@ let bill = document.querySelector('#bill');
 let people = document.querySelector('#numOfPeople');
 let custom = document.querySelector('#custom');
 
+const reset = document.querySelector('.reset');
+      tip = document.querySelector('.tip');
+      five = document.querySelector('.five');
+      ten = document.querySelector('.ten');
+      fifteen = document.querySelector('.fifteen');
+      twentyfive = document.querySelector('.twentyFive');
+      fifty = document.querySelector('.fifty');
+      
+    
 // caluculate tip
 function calcTip() {
   // tip %
-  document.querySelector('.five').value = "5";
-  document.querySelector('.ten').value = "10";
-  document.querySelector('.fifteen').value = "15";
-  document.querySelector('.twentyFive').value = "25";
-  document.querySelector('.fifty').value = "50";
-  let customPercent = custom.value;
-
-  // you might need an if statement
-
+  five.value = 5;
+  // ten.value = 10;
+  // fifteen.value = 15;
+  // twentyFive.value = 25;
 }
 
 // calculate bill per person
@@ -26,7 +30,10 @@ function calcBill() {
   let totalPeople = people.value;
 
   let total = totalBill / totalPeople;
-  // return what;
+
+  
+  // tip per person
+  document.querySelector('#amount').value = (total * (five.value / 100));
 
   // show total per person
   document.querySelector('#total').value = total;
@@ -34,3 +41,4 @@ function calcBill() {
 
 people.addEventListener('keyup', calcBill);
 
+tip.addEventListener('click', calcTip);
