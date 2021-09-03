@@ -23,8 +23,7 @@ header {
 }
 
 #card {
-  border-top-right-radius: 4%;
-  border-top-left-radius: 4%;
+  border-radius: 5%;
 }
 
 .total-card {
@@ -119,4 +118,25 @@ h5 {
 .total-card p {
   color: hsl(172, 67%, 45%);
   font-weight: 500;
+}
+
+
+@media only screen and (min-width: 770px) {
+  main {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .card {
+    width: 70%;
+    height: 70vh;
+  }
+
+  .card1, .total-card {
+    width: 48%
+  }
+
+  .total-card {
+    justify-content: space-between;
+  }
 }
