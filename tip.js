@@ -29,8 +29,6 @@ document.querySelector('.tip-container').addEventListener('click', event => {
 // calculate bill per person
 function calcBill() {
   // get the bill
-
-  console.log(tipAmount);
   let totalBill = bill.value;
 
   // number of people
@@ -45,6 +43,12 @@ function calcBill() {
   document.querySelector('#total').value = total;
 }
 
+function resetEverything() {
+  location.reload();
+}
+
 people.addEventListener('keyup', calcBill);
 
 custom.addEventListener('keyup', getTipCustom);
+
+reset.addEventListener('click', resetEverything);
