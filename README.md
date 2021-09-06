@@ -64,7 +64,7 @@ Hat tip to [Frontend Mentor](https://www.frontendmentor.io/solutions) for the ch
 
 ## Contributors
 
-[Beardless-sheik](https://github.com/Beardless-sheik)
+Thank you, [Beardless-sheik](https://github.com/Beardless-sheik) for your contribution. 😃
 
 ## 🤝 Contributing
 
