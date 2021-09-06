@@ -22,44 +22,47 @@
     
     <div class="container-fluid card" id="card">
       <main>
-        <div>
+        <div class="card1">
           <div class="div-bill">
             <label for="bill" class="bill">Bill</label>
             <br>
-            <input type="text" id="bill" name="bill">
+            <input type="text" id="bill" name="bill" placeholder="0">
           </div>
   
           <div class="tip-percent">
             <p class="bill">Select Tip %</p>
-            <ul class="row row-cols-2">
-              <li><input type="submit" value="5%" class="tip" readonly></li>
-              <li><input type="submit" value="10%" class="tip" readonly></li>
-              <li><input type="submit" value="15%" class="tip" readonly></li>
-              <li><input type="submit" value="25%" class="tip" readonly></li>
-              <li><input type="submit" value="50%" class="tip" readonly></li>
+            <ul class="row row-cols-2 tip-container">
+              <li><input type="submit" value="5" class="tip five" readonly></li>
+              <li><input type="submit" value="10" class="tip ten" readonly></li>
+              <li><input type="submit" value="15" class="tip fifteen" readonly></li>
+              <li><input type="submit" value="25" class="tip twentyFive" readonly></li>
+              <li><input type="submit" value="50" class="tip fifty" readonly></li>
               <li><input placeholder="Custom" id="custom"></li>
             </ul>
           </div>
   
           <div class="div-bill">
-            <label for="numOfPeople" class="bill">Number of People</label><br>
-            <input type="text" id="numOfPeople" name="numOfPeople">
+            <label for="numOfPeople" class="bill">Number of People</label>
+            <br>
+            <input type="text" id="numOfPeople" name="numOfPeople" placeholder="0">
           </div>
         </div>
 
         <div class="total-card">
-          <div class="amount">
-            <label for="amount">
-              <h5>Tip Amount</h5><p>/ person</p>
-            </label>
-            <input type="submit" id="amount" value="0.00" readonly>
-          </div>
-
-          <div class="total">
-            <label for="total">
-              <h5>Total</h5><p>/ person</p>
-            </label>
-            <input type="submit" id="total" value="0.00" readonly>
+          <div>
+            <div class="amount">
+              <label for="amount">
+                <h5>Tip Amount</h5><p>/ person</p>
+              </label>
+              <input type="submit" id="amount" value="0.00" readonly>
+            </div>
+  
+            <div class="total">
+              <label for="total">
+                <h5>Total</h5><p>/ person</p>
+              </label>
+              <input type="submit" id="total" value="0.00" readonly>
+            </div>
           </div>
 
           <input type="submit" value="RESET" class="reset">

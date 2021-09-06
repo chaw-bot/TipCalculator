@@ -9,6 +9,10 @@
   width: 95%;
 }
 
+input {
+  color: hsl(183, 90%, 19%);
+}
+
 * {
   font-family: Space Mono;
 }
@@ -23,8 +27,7 @@ header {
 }
 
 #card {
-  border-top-right-radius: 4%;
-  border-top-left-radius: 4%;
+  border-radius: 5%;
 }
 
 .total-card {
@@ -36,7 +39,7 @@ header {
 }
 
 main {
-  padding: 10% 5% 10% 5%;
+  padding: 5%;
 }
  
 .div-bill {
@@ -49,9 +52,12 @@ main {
 }
 
 #bill {
-  background: url(images/icon-dollar.svg) no-repeat scroll 7px 7px;
+  background: url(images/icon-dollar.svg) no-repeat scroll 10px;
+  direction: rtl;
   padding: 0 10px 10px 0;
   width: 100%;
+  font-weight: 700;
+  font-size: xx-large;
 } 
 
 input {
@@ -61,7 +67,7 @@ input {
 }
 
 #bill, #numOfPeople, #custom {
-  background-color: hsl(189, 41%, 97%);
+  background-color: hsl(189, 41%, 97%)!important;
   font-weight: 700;
 }
 
@@ -72,19 +78,30 @@ input {
   border-radius: 5px;
 }
 
+.tip:active {
+  box-shadow: 7px 6px 28px 1px rgba(0, 0, 0, 0.24);
+  transform: translateY(4px);
+}
+
 #custom {
   color: hsl(186, 14%, 43%);
 }
 
 .tip:hover {
+  background-color: hsl(172, 70%, 68%);
   color: hsl(186, 14%, 43%);
+}
+
+.tip:focus {
   background-color: hsl(172, 67%, 45%);
 }
 
 #numOfPeople {
-  background-image: url(images/icon-person.svg) ;
-  background-repeat: no-repeat;
+  background: url(images/icon-person.svg) no-repeat scroll 10px;
+  direction: rtl;
   width: 100%;
+  font-weight: 700;
+  font-size: xx-large;
 }
 
 .amount, .total {
@@ -94,9 +111,9 @@ input {
 
 #amount, #total {
   background-color: hsl(183, 90%, 19%);
-  font-size: xx-large;
   color: hsl(172, 67%, 45%);
   font-weight: 700;
+  font-size: xx-large;
 }
 
 h5 {
@@ -112,6 +129,15 @@ h5 {
   color: hsl(183, 90%, 19%);
 }
 
+.reset:active {
+  box-shadow: 7px 6px 28px 1px rgba(0, 0, 0, 0.24);
+  transform: translateY(4px);
+}
+
+.reset:focus {
+  background-color: hsl(172, 67%, 45%);
+}
+
 .reset:hover {
   background-color: hsl(172, 70%, 68%);
 }
@@ -119,4 +145,25 @@ h5 {
 .total-card p {
   color: hsl(172, 67%, 45%);
   font-weight: 500;
+}
+
+
+@media only screen and (min-width: 770px) {
+  main {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .card {
+    width: 70%;
+    height: 70vh;
+  }
+
+  .card1, .total-card {
+    width: 48%
+  }
+
+  .total-card {
+    justify-content: space-between;
+  }
 }
