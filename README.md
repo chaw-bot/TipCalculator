@@ -62,6 +62,10 @@ $ git clone https://github.com/chaw-bot/TipCalculator.git
 
 Hat tip to [Frontend Mentor](https://www.frontendmentor.io/solutions) for the challenge and the template provided.
 
+## Contributors
+
+[Beardless-sheik](https://github.com/Beardless-sheik)
+
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
