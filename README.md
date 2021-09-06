@@ -22,7 +22,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [GitHub Repo](https://github.com/chaw-bot/TipCalculator/tree/main)
-- Live Site URL: [Depoyed version](https://chaw-bot.github.io/TipCalculator/)
+- Live Site URL: [Depoyed version](https://tip-calculator-chaw-bot.vercel.app/)
 
 ## My process
 
