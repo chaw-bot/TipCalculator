@@ -33,14 +33,13 @@ function calcBill() {
 
   // number of people
   let totalPeople = people.value;
-
   let total = totalBill / totalPeople;
 
   // tip per person
-  document.querySelector('#amount').value = (total * (tipAmount / 100));
+  document.querySelector('#amount').value = (total * (tipAmount / 100)).toFixed(2);
 
   // show total per person
-  document.querySelector('#total').value = total;
+  document.querySelector('#total').value = total.toFixed(2);
 }
 
 function resetEverything() {
