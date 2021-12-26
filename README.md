@@ -55,7 +55,7 @@ $ git clone https://github.com/chaw-bot/TipCalculator.git
 
 - Frontend Mentor - [@chaw-bot](https://www.frontendmentor.io/profile/chaw-bot)
 - GitHub: [@chaw-bot](https://github.com/chaw-bot)
-- Twitter: [@chaw36422087](https://twitter.com/chaw36422087)
+- Twitter: [@chaw36422087](https://twitter.com/chawfronaut)
 - LinkedIn: [Chawanzi Ng'uni](https://www.linkedin.com/in/chawanzi-ng-uni-449328212/)
 
 ## Acknowledgments
